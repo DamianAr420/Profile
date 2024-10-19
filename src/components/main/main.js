@@ -6,7 +6,7 @@ export default function main() {
     "sql", "css", "rwd", "html", "figma", "node.js", "mongoDB", "react.js", "javascript", "express.js", "tailwindcss", "microsoft-360"
   ]
   return (
-    <div>
+    <div className='mainBody'>
       <div className='header'>
         <div className="img"><img src="public\me.jpg" alt="error" /></div>
         <div className="name">

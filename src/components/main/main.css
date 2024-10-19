@@ -22,6 +22,7 @@
                     2px 2px 20px #111, 
                     2px 2px 30px #111, 
                     2px 2px 40px #111;
+    width: 50vw;
 }
 
 .desc {
@@ -57,4 +58,26 @@
 
 .skills ul li:hover {
     color: white;
+}
+
+/* phone */
+
+@media screen and (max-width: 530px) {
+    .img {
+        width: 170px;
+    }
+
+    .name {
+        font-size: 170%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .img {
+        width: 160px;
+    }
+
+    .name {
+        font-size: 170%;
+    }
 }
