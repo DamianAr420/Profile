@@ -9,7 +9,7 @@
 .img {
     width: 200px;
     height: 300px;
-    box-shadow: 0px 0px 10px 2px rgb(255, 0, 0);
+    box-shadow: 0px 0px 10px 2px rgb(255, 0, 0), 0px 0px 20px 2px rgb(255, 0, 0);
     border-radius: 15px;
     padding: 5px;
 }
@@ -39,7 +39,7 @@
     margin-top: 30px;
     width: 200px;
     padding: 5px;
-    box-shadow: 2px 2px 20px 1px rgb(255, 0, 0);
+    box-shadow: 0px 0px 10px 2px rgb(255, 0, 0), 0px 0px 20px 2px rgb(255, 0, 0);
     border-radius: 15px;
     text-shadow: 0px 0px 10px rgb(255, 0, 0), 0px 0px 20px rgb(255, 0, 0), 0px 0px 30px rgb(255, 0, 0), 0px 0px 40px rgb(255, 0, 0);
 }
@@ -60,6 +60,62 @@
     color: white;
 }
 
+.sectionOne {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.aboutMe {
+    color: white;
+    font-size: 120%;
+    background-color: #111;
+    height: 50%;
+    width: 80%;
+    padding: 25px;
+    margin: 50px auto 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.aboutMe::after, .aboutMe::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 50%, red);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 3px;
+    border-radius: 15px;
+    animation: 3s spin linear infinite;
+}
+
+.aboutMe::before {
+    filter: blur(1.5rem);
+    opacity: 1;
+}
+
+@keyframes spin {
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
 /* phone */
 
 @media screen and (max-width: 530px) {
@@ -70,6 +126,14 @@
     .name {
         font-size: 170%;
     }
+
+    .aboutMe {
+        font-size: 100%;
+    }
+
+    .skills {
+        width: 170px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -79,5 +143,9 @@
 
     .name {
         font-size: 170%;
+    }
+
+    .skills {
+        width: 160px;
     }
 }
