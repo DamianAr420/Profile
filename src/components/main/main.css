@@ -9,9 +9,9 @@
 .img {
     width: 200px;
     height: 300px;
-    box-shadow: 0px 0px 10px 2px rgb(255, 0, 0), 0px 0px 20px 2px rgb(255, 0, 0);
     border-radius: 15px;
     padding: 5px;
+    animation: 5s shadow linear infinite;
 }
 
 .name {
@@ -116,7 +116,25 @@
     }
 }
 
+@keyframes shadow {
+    0%{
+        box-shadow: 0px 0px 10px 2px rgb(255, 0, 0);
+    }
+    50%{
+        box-shadow: 0px 0px 10px 2px rgb(255, 0, 0), 0px 0px 30px 4px rgb(255, 0, 0);
+    }
+    100%{
+        box-shadow: 0px 0px 10px 2px rgb(255, 0, 0);
+    }
+}
+
 /* phone */
+
+@media screen and (max-width: 660px) {
+    .aboutMe {
+        height: 65%;
+    }
+}
 
 @media screen and (max-width: 530px) {
     .img {
@@ -136,16 +154,69 @@
     }
 }
 
-@media screen and (max-width: 450px) {
-    .img {
-        width: 160px;
-    }
-
-    .name {
-        font-size: 170%;
+@media screen and (max-width: 500px) {
+    .sectionOne {
+        grid-template-columns: 1fr;
     }
 
     .skills {
-        width: 160px;
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .aboutMe {
+        height: 80%;
+    }
+
+    .header {
+        grid-template-columns: 1fr;
+        background: none;
+    }
+
+    .img {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .name {
+        margin: 50px auto 0 auto;
+        padding: 10px;
+        width: 80%;
+        border-radius: 15px;
+        background-color: #111;
+        position: relative;
+    }
+
+    .name::after, .name::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(45deg, red, transparent, transparent, transparent, red);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        padding: 3px;
+        border-radius: 15px;
+    }
+
+    .name::before {
+        
+        opacity: 1;
+        animation: 2s blur linear infinite;
+    }
+}
+
+@keyframes blur {
+    0%{
+        filter: blur(1rem);
+    }
+
+    50%{
+        filter: blur(2rem);
+    }
+    100%{
+        filter: blur(1rem);
     }
 }
