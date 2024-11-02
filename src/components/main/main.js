@@ -29,12 +29,14 @@ export default function Main() {
       document.documentElement.style.setProperty('--bcg', '#fff');
       document.documentElement.style.setProperty('--txt', '#111');
       document.documentElement.style.setProperty('--nav', '#111');
+      document.documentElement.style.setProperty('--shadow', 'rgb(0, 81, 255)');
       setDarkMode(false)
     } else {
       dmE.marginLeft = "0px";
-      document.documentElement.style.setProperty('--bcg', '#111')
-      document.documentElement.style.setProperty('--txt', '#fff')
+      document.documentElement.style.setProperty('--bcg', '#111');
+      document.documentElement.style.setProperty('--txt', '#fff');
       document.documentElement.style.setProperty('--nav', '#fff');
+      document.documentElement.style.setProperty('--shadow', 'rgb(255, 0, 0)');
       setDarkMode(true)
     }
   }
