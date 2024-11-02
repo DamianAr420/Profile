@@ -48,7 +48,7 @@ export default function Main() {
           <ul>
             <li><Link className='link' to="skills" smooth={true} duration={500} offset={-150}>Skills</Link></li>
             <li><Link className='link' to="aboutMe" smooth={true} duration={500} offset={-150}>About</Link></li>
-            <li><Link className='link' to="projects" smooth={true} duration={500} offset={-150}>Projects</Link></li>
+            <li><Link className='link' to="projects" smooth={true} duration={500} offset={-250}>Projects</Link></li>
             <li><Link className='link' to="contact" smooth={true} duration={500} offset={-150}>Contact</Link></li>
           </ul>
         </nav>
