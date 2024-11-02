@@ -1,9 +1,16 @@
+:root {
+    --bcg: #111;
+    --txt: #fff;
+    --shadow: rgb(255, 0, 0);
+    --nav: #000;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 .navbar {
-    background-color: #111;
+    background-color: var(--bcg);
     padding: 5px;
     position: fixed;
     top: 0;
@@ -12,7 +19,7 @@ html {
     height: 50px;
     line-height: 50px;
     z-index: 1000;
-    box-shadow: 0 3px 10px rgb(0, 0, 0);
+    box-shadow: 0 3px 10px var(--nav);
 }
   
 .navbar ul {
@@ -23,23 +30,24 @@ html {
     margin: 0;
 }
 
-.navbar ul li a {
-    color: white;
+.link {
+    color: var(--txt);
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 150%;
     font-weight: bold;
+    cursor: pointer;
 }
 
-.navbar ul li a:hover {
-    background-color: red;
+.link:hover {
+    background-color: var(--shadow);
 }
 
 .header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background: linear-gradient(45deg, #111 40%, rgb(255, 0, 0));
+    background: linear-gradient(45deg, var(--bcg) 40%, var(--shadow));
     justify-content: center;
     align-items: center;
 }
@@ -61,12 +69,12 @@ html {
 
 .name {
     font-size: 200%;
-    color: white;
-    text-shadow:    2px 2px 2px #111, 
-                    2px 2px 10px #111, 
-                    2px 2px 20px #111, 
-                    2px 2px 30px #111, 
-                    2px 2px 40px #111;
+    color: var(--txt);
+    text-shadow:    2px 2px 2px var(--bcg), 
+                    2px 2px 10px var(--bcg), 
+                    2px 2px 20px var(--bcg), 
+                    2px 2px 30px var(--bcg), 
+                    2px 2px 40px var(--bcg);
     width: 50vw;
     max-width: 400px;
 }
@@ -74,7 +82,7 @@ html {
 .desc {
     font-size: 70%;
     text-align: center;
-    text-shadow: 2px 2px 2px #111;
+    text-shadow: 2px 2px 2px var(--bcg);
     margin-top: 60px;
 }
 
@@ -84,7 +92,7 @@ html {
 
 .skills {
     font-size: 150%;
-    color: white;
+    color: var(--txt);
     margin-top: 50px;
     min-width: 180px;
     max-width: 300px;
@@ -92,7 +100,10 @@ html {
     padding: 5px;
     animation: 5s shadow linear infinite;
     border-radius: 15px;
-    text-shadow: 0px 0px 10px rgb(255, 0, 0), 0px 0px 20px rgb(255, 0, 0), 0px 0px 30px rgb(255, 0, 0), 0px 0px 40px rgb(255, 0, 0);
+    text-shadow:    0px 0px 10px var(--shadow), 
+                    0px 0px 20px var(--shadow), 
+                    0px 0px 30px var(--shadow), 
+                    0px 0px 40px var(--shadow);
 }
 
 .skills h1 {
@@ -103,12 +114,16 @@ html {
     list-style: circle;
 }
 
+.skills ul li {
+    cursor: pointer;
+}
+
 .skills ul li::marker {
-    color: rgb(255, 0, 0);
+    color: var(--shadow);
 }
 
 .skills ul li:hover {
-    color: white;
+    color: var(--bcg);
 }
 
 .sectionOne {
@@ -117,9 +132,9 @@ html {
 }
 
 .aboutMe {
-    color: white;
+    color: var(--txt);
     font-size: 120%;
-    background-color: #111;
+    background-color: var(--bcg);
     height: 50%;
     width: 80%;
     padding: 25px;
@@ -144,7 +159,7 @@ html {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: conic-gradient(from var(--angle), transparent 50%, red);
+    background-image: conic-gradient(from var(--angle), transparent 50%, var(--shadow));
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -160,9 +175,9 @@ html {
 }
 
 .projects {
-    margin: 100px auto;
+    margin: 100px auto 0px auto;
     width: 80%;
-    color: white;
+    color: var(--txt);
   }
   
 .project-list {
@@ -172,26 +187,26 @@ html {
 }
   
 .project-item {
-    background-color: #111;
+    background-color: var(--bcg);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgb(255, 0, 0);
+    box-shadow: 0 0 10px var(--shadow);
     text-align: center;
 }
 
 .project-item a {
-    color: red;
+    color: rgb(255, 0, 0);
     text-decoration: none;
 }
 
 .project-item a:hover {
-    color: white;
+    color: var(--shadow);
 }
 
 .sectionThree {
     width: 80vw;
     height: auto;
-    margin: 100px auto;
+    margin: 50px auto;
 }
 
 .contact {
@@ -199,7 +214,7 @@ html {
 }
 
 .contactContent {
-    box-shadow: 0px 0px 10px rgb(255, 0, 0);
+    box-shadow: 0px 0px 10px var(--shadow);
     border-radius: 15px;
     padding: 30px;
     display: grid;
@@ -208,8 +223,28 @@ html {
 
 .contactContent p {
     margin: 0 auto;
-    color: white;
+    color: var(--txt);
     font-size: 110%;
+}
+
+.darkmode {
+    width: 70px;
+    height: 30px;
+    background-color: var(--bcg);
+    position: absolute;
+    right: 20px;
+    border-radius: 20px;
+    border: 2px solid var(--txt);
+    top: 75px;
+}
+
+.dmElement {
+    width: 28px;
+    height: 28px;
+    background-color: var(--txt);
+    border-radius: 50%;
+    border: 1px solid var(--bcg);
+    transition: 0.5s;
 }
 
 @keyframes spin {
@@ -223,13 +258,13 @@ html {
 
 @keyframes shadow {
     0%{
-        box-shadow: 0px 0px 10px 2px rgb(255, 0, 0);
+        box-shadow: 0px 0px 10px 2px var(--shadow);
     }
     50%{
-        box-shadow: 0px 0px 10px 2px rgb(255, 0, 0), 0px 0px 30px 4px rgb(255, 0, 0);
+        box-shadow: 0px 0px 10px 2px var(--shadow), 0px 0px 30px 4px var(--shadow);
     }
     100%{
-        box-shadow: 0px 0px 10px 2px rgb(255, 0, 0);
+        box-shadow: 0px 0px 10px 2px var(--shadow);
     }
 }
 
@@ -276,7 +311,7 @@ html {
         padding: 10px;
         width: 80%;
         border-radius: 15px;
-        background-color: #111;
+        background-color: var(--bcg);
         position: relative;
     }
 
@@ -285,7 +320,7 @@ html {
         position: absolute;
         height: 100%;
         width: 100%;
-        background: linear-gradient(45deg, red, transparent, transparent, transparent, red);
+        background: linear-gradient(45deg, var(--shadow), transparent, transparent, transparent, var(--shadow));
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -308,7 +343,7 @@ html {
     }
 
     .navbar {
-        height: auto;
+        height: 105px;
     }
 
     .navbar ul {
@@ -322,6 +357,11 @@ html {
 
     .mainBody {
         padding-top: 140px;
+    }
+
+    .darkmode {
+        top: 120px;
+        right: 0;
     }
 }
 
