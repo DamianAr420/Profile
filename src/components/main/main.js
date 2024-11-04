@@ -10,8 +10,9 @@ export default function Main() {
   const skills = [
     "sql", "css", "rwd", "html", "figma", "react.js", "node.js", "express.js", "javascript", "mongoDB", "tailwindcss", "microsoft-360"
   ]
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [darkmode, setDarkMode] = useState(true);
+  const [opinions, setOpinions] = useState([]);
 
   useEffect(() => {
     AOS.init({
@@ -20,6 +21,10 @@ export default function Main() {
     setTimeout(() => {
       setIsLoading(false);
     }, 5000);
+
+    fetch("https://sheetdb.io/api/v1/qmylb2ke3t804")
+      .then(response => response.json())
+      .then(data => setOpinions(data));
   }, []);
 
   const darkmodeSwitch = () => {
@@ -119,7 +124,20 @@ export default function Main() {
           </Element>
         </div>
 
+        <div className='opinions'>
+          <h1 className='text-[var(--txt)]'>Opinions</h1>
+          <div className='opinionsContent'>
+            {opinions.map((opinion, index) => (
+              <div key={index} className='opinion'>
+                <h2>{opinion.name}</h2>
+                <p className='rate'>{opinion.rate}/5</p>
+                <p>{opinion.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>}
       </div>
-  )
+  );
 }
