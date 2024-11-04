@@ -124,9 +124,10 @@ export default function Main() {
           </Element>
         </div>
 
-        <div className='opinions'>
+        <div className='opinions' data-aos="fade-out">
           <h1 className='text-[var(--txt)]'>Opinions</h1>
           <div className='opinionsContent'>
+            <div className='addOpinion'>You can rate my work here: <a className='text-[rgb(255,0,0)] decoration-transparent' href="https://sheetdb.io/s/f/11zgx66lsndnw" target="_blank" rel="noopener noreferrer">Rate</a></div>
             {opinions.map((opinion, index) => (
               <div key={index} className='opinion'>
                 <h2>{opinion.name}</h2>

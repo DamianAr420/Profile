@@ -284,6 +284,14 @@ html {
     border-radius: 50%;
 }
 
+.addOpinion {
+    font-size: 130%;
+    font-weight: bold;
+    color: var(--txt);
+    text-align: center;
+    padding: 10px;
+}
+
 @keyframes spin {
     from{
         --angle: 0deg;
