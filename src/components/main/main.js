@@ -8,7 +8,7 @@ import { Link, Element } from 'react-scroll';
 
 export default function Main() {
   const skills = [
-    "sql", "css", "rwd", "html", "figma", "react.js", "node.js", "express.js", "javascript", "mongoDB", "tailwindcss", "microsoft-360"
+    "sql", "css", "rwd", "html", "figma", "react.js", "node.js", "express.js", "javascript", "mongoDB", "typescript", "tailwindcss", "microsoft-360",
   ]
   const [isLoading, setIsLoading] = useState(false);
   const [darkmode, setDarkMode] = useState(true);
