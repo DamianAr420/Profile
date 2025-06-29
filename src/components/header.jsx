@@ -9,10 +9,10 @@ export default function Header() {
   const [language, setLanguage] = useState(i18n.language || "en");
 
   const buttons = [
-    { label: "header.buttons.home", path: "/" },
-    { label: "header.buttons.projects", path: "/projects" },
-    { label: "header.buttons.about", path: "/about" },
-    { label: "header.buttons.contact", path: "/contact" },
+    { label: "header.buttons.home", path: "/Profile" },
+    { label: "header.buttons.projects", path: "/Profile/projects" },
+    { label: "header.buttons.about", path: "/Profile/about" },
+    { label: "header.buttons.contact", path: "/Profile/contact" },
   ];
 
   useEffect(() => {
