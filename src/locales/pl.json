@@ -1,0 +1,64 @@
+{
+  "header": {
+    "darkmode": "Tryb ciemny",
+    "language": "Język",
+    "buttons": {
+      "home": "Strona główna",
+      "projects": "Projekty",
+      "about": "O mnie",
+      "contact": "Kontakt"
+    }
+  },
+  "home": {
+    "title": "Cześć, jestem Damian 👋",
+    "subtitle": "Frontend Developer",
+    "description": "Tworzę szybkie i nowoczesne aplikacje webowe w React i TailwindCSS. Dbam o czysty kod i dobre doświadczenia użytkownika.",
+    "cta": {
+      "projects": "Zobacz Projekty",
+      "contact": "Skontaktuj się"
+    }
+  },
+  "projects": {
+    "taskHub": "Pełnoprawna aplikacja do zarządzania zadaniami z autoryzacją użytkownika, interfejsem drag-and-drop i zapisem danych w MongoDB. Zbudowana z użyciem Reacta, TypeScriptu, Node.js i Tailwinda.",
+    "mgk": "Minimalistyczna, responsywna galeria zdjęć kotów zbudowana w React i Tailwindzie. Prosty interfejs i delikatna interakcja.",
+    "school": "Aplikacja dziennika szkolnego umożliwiająca interakcję uczniów i nauczycieli. Zawiera listy uczniów, oceny i informacje o klasach. Backend oparty na Node.js i MongoDB."
+  },
+  "about": {
+    "role": "Front-End Developer",
+    "skills": "Umiejętności",
+    "softSkills": "Umiejętności miękkie",
+    "soft": {
+      "abilityToWork": "Umiejętność pracy pod presją",
+      "timeManagement": "Zarządzanie czasem",
+      "attentionToDetail": "Dbałość o szczegóły",
+      "punctuality": "Punktualność",
+      "commitment": "Zaangażowanie",
+      "teamwork": "Praca zespołowa"
+    },
+    "education": "Edukacja",
+    "uni": {
+      "title": "Studia licencjackie – Informatyka w biznesie",
+      "years": "2023 – teraz",
+      "specialization": "Specjalizacja: Front-end Developer"
+    },
+    "tech": {
+      "title": "Technikum – Informatyk",
+      "years": "2019 – 2023"
+    },
+    "experience": "Doświadczenie",
+    "job": {
+      "company": "Matseboss Solutions",
+      "role": "Front-end Developer",
+      "dates": "04.2025 – 07.2025",
+      "task1": "Projektowanie układu i UI w Figma",
+      "task2": "Tworzenie responsywnej aplikacji z Vue.js i Tailwind CSS",
+      "task3": "Wdrażanie nowych funkcji, poprawa błędów i refaktoryzacja komponentów na podstawie feedbacku lidera zespołu"
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "description": "Skontaktuj się ze mną przez poniższe kanały.",
+    "email": "Email",
+    "phone": "Telefon"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "header": {
+    "darkmode": "Dark Mode",
+    "language": "Language",
+    "buttons": {
+      "home": "Home",
+      "projects": "Projects",
+      "about": "About Me",
+      "contact": "Contact"
+    }
+  },
+  "home": {
+    "title": "Hi, I'm Damian 👋",
+    "subtitle": "Frontend Developer",
+    "description": "I build fast and modern web apps using React, TailwindCSS, and modern tools. I care about clean code and user experience.",
+    "cta": {
+      "projects": "View Projects",
+      "contact": "Contact Me"
+    }
+  },
+  "projects": {
+    "taskHub": "A full-stack task management app with user authentication, drag-and-drop interface, and MongoDB-based persistence. Built with React, TypeScript, Node.js, and Tailwind.",
+    "mgk": "A minimal and responsive gallery of cute cats built with React and Tailwind. Features a clean UI and light interactivity.",
+    "school": "A school journal web app where students and teachers can interact. Includes student lists, grades, and class info. Backend built with Node.js and MongoDB."
+  },
+  "about": {
+    "role": "Front-End Developer",
+    "skills": "Skills",
+    "softSkills": "Soft Skills",
+    "soft": {
+      "abilityToWork": "Ability to work under pressure",
+      "timeManagement": "Time management",
+      "attentionToDetail": "Attention to detail",
+      "punctuality": "Punctuality",
+      "commitment": "Commitment",
+      "teamwork": "Teamwork"
+    },
+    "education": "Education",
+    "uni": {
+      "title": "Bachelor’s Degree – IT in Business",
+      "years": "2023 – now",
+      "specialization": "Specialization: Front-end Developer"
+    },
+    "tech": {
+      "title": "Technical School – IT",
+      "years": "2019 – 2023"
+    },
+    "experience": "Experience",
+    "job": {
+      "company": "Matseboss Solutions",
+      "role": "Front-end Developer",
+      "dates": "04.2025 – 07.2025",
+      "task1": "Designed layout and UI in Figma",
+      "task2": "Developed responsive web app with Vue.js and Tailwind CSS",
+      "task3": "Implemented new features, fixed bugs and refactored components based on team leader feedback"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Get in touch with me through the following channels.",
+    "email": "Email",
+    "phone": "Phone"
+  }
+}

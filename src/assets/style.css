@@ -1,0 +1,31 @@
+.headerButton {
+  box-shadow: 0 2px 5px var(--color-shadow);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.headerButton:hover {
+  transform: scale(1.03);
+  filter: brightness(1.05);
+}
+
+.mainBody {
+  box-shadow: 0 0 12px 3px var(--color-shadow);
+  border-radius: 1rem;
+}
+
+.boxShadow {
+  box-shadow: 0 4px 16px var(--color-shadow);
+}
+
+.dot {
+  transition: transform 0.3s ease-in-out;
+}
+
+.roundedSoft {
+  border-radius: 1.25rem;
+}
+
+.interactive:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+}
