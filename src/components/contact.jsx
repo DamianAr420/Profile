@@ -9,8 +9,8 @@ export default function Contact() {
     {
       icon: <Mail className="w-5 h-5" />,
       label: t("contact.email"),
-      value: "damian.ar420@gmail.com",
-      link: "mailto:damian.ar420@gmail.com",
+      value: "damianarg2115@gmail.com",
+      link: "mailto:damianarg2115@gmail.com",
     },
     {
       icon: <Phone className="w-5 h-5" />,
