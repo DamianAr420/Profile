@@ -23,12 +23,12 @@ export default function Home() {
       <p className="mt-4 text-muted-foreground">{t("home.description")}</p>
 
       <div className="flex justify-center gap-4 mt-6 flex-wrap">
-        <Link to="/projects">
+        <Link to="/Profile/projects">
           <button className="bg-primary text-text px-6 py-2 rounded-xl shadow hover:scale-105 transition">
             📁 {t("home.cta.projects")}
           </button>
         </Link>
-        <Link to="/contact">
+        <Link to="/Profile/contact">
           <button className="bg-muted text-foreground px-6 py-2 rounded-xl shadow hover:scale-105 transition">
             📨 {t("home.cta.contact")}
           </button>

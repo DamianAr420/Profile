@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import "../assets/style.css";
 import taskhub from "../img/taskhub.png";
 import mgk from "../img/mgk.png";
+import SkillShare from "../img/SkillShare.png";
 
 export default function Projects() {
   const { t } = useTranslation();
@@ -24,10 +25,11 @@ export default function Projects() {
       githubLink: "https://github.com/DamianAr420/mini-galeria-kotow",
     },
     {
-      title: "School Journal",
-      description: t("projects.school"),
-      technologies: ["React", "Node.js", "MongoDb"],
-      githubLink: "https://github.com/DamianAr420/school",
+      title: "SkillShare",
+      description: t("projects.skillshare"),
+      image: SkillShare,
+      technologies: ["Vue", "Tailwind", "TypeScript", "Node.js", "MongoDb"],
+      githubLink: "https://github.com/DamianAr420/SkillShare",
     },
   ];
 

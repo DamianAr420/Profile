@@ -21,7 +21,7 @@
   "projects": {
     "taskHub": "A full-stack task management app with user authentication, drag-and-drop interface, and MongoDB-based persistence. Built with React, TypeScript, Node.js, and Tailwind.",
     "mgk": "A minimal and responsive gallery of cute cats built with React and Tailwind. Features a clean UI and light interactivity.",
-    "school": "A school journal web app where students and teachers can interact. Includes student lists, grades, and class info. Backend built with Node.js and MongoDB."
+    "skillshare": "The application allows users to post advertisements offering their skills and services. It includes user authentication and registration, the ability to add, edit, and delete ads, view other users’ profiles, chat with them, and choose the interface language. It is built using Vue.js, Tailwind CSS, Node.js, and MongoDB."
   },
   "about": {
     "role": "Front-End Developer",
