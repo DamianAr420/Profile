@@ -1,64 +1,80 @@
 {
-  "header": {
-    "darkmode": "Dark Mode",
-    "language": "Language",
-    "buttons": {
-      "home": "Home",
-      "projects": "Projects",
-      "about": "About Me",
-      "contact": "Contact"
-    }
+  "nav_home": "Home",
+  "nav_about": "About",
+  "nav_projects": "Projects",
+  "nav_contact": "Contact",
+  "menu": "Menu",
+  "language": {
+    "pl": "Polish",
+    "en": "English"
   },
-  "home": {
-    "title": "Hi, I'm Damian 👋",
-    "subtitle": "Frontend Developer",
-    "description": "I build fast and modern web apps using React, TailwindCSS, and modern tools. I care about clean code and user experience.",
-    "cta": {
-      "projects": "View Projects",
-      "contact": "Contact Me"
-    }
-  },
-  "projects": {
-    "taskHub": "A full-stack task management app with user authentication, drag-and-drop interface, and MongoDB-based persistence. Built with React, TypeScript, Node.js, and Tailwind.",
-    "mgk": "A minimal and responsive gallery of cute cats built with React and Tailwind. Features a clean UI and light interactivity.",
-    "skillshare": "The application allows users to post advertisements offering their skills and services. It includes user authentication and registration, the ability to add, edit, and delete ads, view other users’ profiles, chat with them, and choose the interface language. It is built using Vue.js, Tailwind CSS, Node.js, and MongoDB."
-  },
-  "about": {
-    "role": "Front-End Developer",
-    "skills": "Skills",
-    "softSkills": "Soft Skills",
-    "soft": {
-      "abilityToWork": "Ability to work under pressure",
-      "timeManagement": "Time management",
-      "attentionToDetail": "Attention to detail",
-      "punctuality": "Punctuality",
-      "commitment": "Commitment",
-      "teamwork": "Teamwork"
-    },
-    "education": "Education",
-    "uni": {
-      "title": "Bachelor’s Degree – IT in Business",
-      "years": "2023 – now",
-      "specialization": "Specialization: Front-end Developer"
-    },
-    "tech": {
-      "title": "Technical School – IT",
-      "years": "2019 – 2023"
-    },
-    "experience": "Experience",
-    "job": {
-      "company": "Matseboss Solutions",
-      "role": "Front-end Developer",
-      "dates": "04.2025 – 07.2025",
-      "task1": "Designed layout and UI in Figma",
-      "task2": "Developed responsive web app with Vue.js and Tailwind CSS",
-      "task3": "Implemented new features, fixed bugs and refactored components based on team leader feedback"
-    }
-  },
-  "contact": {
-    "title": "Contact",
-    "description": "Get in touch with me through the following channels.",
-    "email": "Email",
-    "phone": "Phone"
-  }
+
+  "home_hero_tagline": "I don't just code. I solve problems.",
+  "home_hero_headline": "I build scalable web applications you'll love to use.",
+  "home_cta_projects": "See My Potential",
+  "home_cta_guarantee": "I guarantee you won't be disappointed. Click and see for yourself.",
+  "home_tech_title": "My Core Technology Stack",
+  "home_tech_frontend_title": "Frontend",
+  "home_tech_frontend_skills": "React, Vue, JavaScript, TypeScript, Tailwind CSS, high-performance animations.",
+  "home_tech_backend_title": "Backend",
+  "home_tech_backend_skills": "Node.js (Express), REST API, MongoDB, basic knowledge of microservice architecture.",
+  "home_tech_tools_title": "Tools and Process",
+  "home_tech_tools_skills": "Git, GitHub, GitLab, Figma, Trello (Kanban), Jira (Agile).",
+  "home_featured_title": "A project you must see",
+  "project_case_study": "Featured Case Study",
+  "home_view_all_projects": "View all projects →",
+  "project1_title": "SkillShare",
+
+  "about_photo_alt": "Professional profile photo of Damian Argalski",
+  "about_hero_headline": "Hi, I'm Damian Argalski, and I create digital experiences.",
+  "about_intro_paragraph1": "I am an ambitious Full-Stack Developer (with a particular passion for Frontend) with a clear goal: to find my first job where I can utilize my skills to build efficient and **visually precise** web applications. My main technologies are **Vue/Tailwind CSS** and **Node.js/MongoDB**.",
+  "about_intro_paragraph2": "My work is guided by the **pixel-perfect** principle – a 1px misalignment or a minimal difference in shade is a bug to me. If I do something, I do it seriously. Thanks to this attention to detail, I deliver interfaces that not only work but also guarantee an exceptional User Experience.",
+  "about_cta_contact": "Get in Touch",
+  "about_cta_projects": "My Projects",
+  "about_philosophy_title": "Key Asset: Precision and Quality",
+  "about_philosophy_text": "I believe that every line of code should add value and be easy to maintain. I focus on user experience, performance, and scalability. I believe in continuous learning and adapting to changing technologies, as well as open team communication as the key to any project's success. **My unique asset is an obsession with visual and technical quality.**",
+  "about_journey_title": "My Short Development Journey",
+  "about_journey_milestone1_title": "Beginnings: The Clash with React",
+  "about_journey_milestone1_desc": "I remember the frustration when learning my first framework (React) – I understood nothing, but curiosity and the desire to build pushed me forward. This moment defined my determination to master the technology.",
+  "about_journey_milestone2_title": "Stack Choice: Vue & Tailwind",
+  "about_journey_milestone2_desc": "Switching to Vue.js and Tailwind CSS allowed me to combine attention to design with efficiency. This is my current, preferred stack, in which I build the fastest and cleanest.",
+  "about_journey_milestone3_title": "Goal: First Job",
+  "about_journey_milestone3_desc": "I am currently focused on building solid projects (like SkillShare) to prove my worth as a Junior Full/Front-end Developer ready to bring real value to a professional team.",
+
+  "about_hobbies_title": "What Do I Do When I'm Not Coding?",
+  "about_hobbies_text": "Outside the world of code, I am passionate about **motorcycles, cars, and gym training**. These passions, though different, share the need for attention to detail, precision, and continuous improvement, which translates into my approach to programming: striving for optimal performance and reliability.",
+  "about_final_cta_headline": "Let's start creating together.",
+  "about_final_cta_text": "If you are looking for an ambitious, meticulous, and determined person who delivers 'pixel perfect' quality code, I'd be happy to discuss potential collaboration.",
+  "about_cta_contact_large": "Let's Connect",
+
+  "contact_recruiter_title": "Ready for a new chapter",
+  "contact_recruiter_subtitle": "Below you will find all necessary methods to contact me. I am open to interesting job offers and projects.",
+  "contact_direct_info_title": "Direct Contact Details",
+  "contact_email": "Email",
+  "contact_email_desc": "Preferred communication channel.",
+  "contact_phone": "Phone",
+  "contact_phone_desc": "Please contact me by phone for urgent matters.",
+  "contact_location": "Location",
+  "contact_location_desc": "Ready for remote work, fully flexible.",
+  "contact_pro_links_title": "Professional Links",
+  "contact_linkedin_desc": "My full professional profile and work history.",
+  "contact_github_desc": "See samples of my code and recent projects.",
+  "contact_portfolio_desc": "View my best work and case studies.",
+  "contact_recruiter_footer": "Thank you for your time and involvement in the recruitment process.",
+
+  "projects_main_title": "My Projects",
+  "projects_main_subtitle": "Below are selected projects that best showcase my skills.",
+  "projects_featured": "Featured",
+  "projects_recruitment_task": "Recruitment Task",
+  "projects_live_button": "See Demo",
+  "projects_live_button_short": "Demo",
+  "projects_code_button": "Source Code",
+  "projects_code_button_short": "Code",
+  "projects_call_to_action": "You can find more of my work and experiments on my GitHub profile.",
+  "project_skillshare_title": "SkillShare",
+  "project_skillshare_desc": "On this site, you can offer your skills or look for people who possess the skills you seek.",
+  "project_taskhub_title": "TaskHub",
+  "project_taskhub_desc": "An advanced task manager with a notification, tagging, and priority system. The project focuses on performance and intuitive UX.",
+  "project_cats_title": "Mini Cat Gallery",
+  "project_cats_desc": "A simple gallery application created as a recruitment task for an internship. It implements data fetching from an external API."
 }

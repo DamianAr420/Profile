@@ -1,64 +1,80 @@
 {
-  "header": {
-    "darkmode": "Tryb ciemny",
-    "language": "Język",
-    "buttons": {
-      "home": "Strona główna",
-      "projects": "Projekty",
-      "about": "O mnie",
-      "contact": "Kontakt"
-    }
+  "nav_home": "Strona Główna",
+  "nav_about": "O mnie",
+  "nav_projects": "Projekty",
+  "nav_contact": "Kontakt",
+  "menu": "Menu",
+  "language": {
+    "pl": "Polski",
+    "en": "Angielski"
   },
-  "home": {
-    "title": "Cześć, jestem Damian 👋",
-    "subtitle": "Frontend Developer",
-    "description": "Tworzę szybkie i nowoczesne aplikacje webowe w React i TailwindCSS. Dbam o czysty kod i dobre doświadczenia użytkownika.",
-    "cta": {
-      "projects": "Zobacz Projekty",
-      "contact": "Skontaktuj się"
-    }
-  },
-  "projects": {
-    "taskHub": "Pełnoprawna aplikacja do zarządzania zadaniami z autoryzacją użytkownika, interfejsem drag-and-drop i zapisem danych w MongoDB. Zbudowana z użyciem Reacta, TypeScriptu, Node.js i Tailwinda.",
-    "mgk": "Minimalistyczna, responsywna galeria zdjęć kotów zbudowana w React i Tailwindzie. Prosty interfejs i delikatna interakcja.",
-    "skillshare": "Aplikacja służy do publikowania ogłoszeń, w których użytkownicy mogą oferować swoje umiejętności i usługi. Umożliwia autoryzację i rejestrację użytkowników, dodawanie, edytowanie oraz usuwanie ogłoszeń, przeglądanie profili innych użytkowników, prowadzenie czatów oraz wybór języka interfejsu. Została zbudowana w oparciu o technologie Vue.js, Tailwind CSS, Node.js i MongoDB."
-  },
-  "about": {
-    "role": "Front-End Developer",
-    "skills": "Umiejętności",
-    "softSkills": "Umiejętności miękkie",
-    "soft": {
-      "abilityToWork": "Umiejętność pracy pod presją",
-      "timeManagement": "Zarządzanie czasem",
-      "attentionToDetail": "Dbałość o szczegóły",
-      "punctuality": "Punktualność",
-      "commitment": "Zaangażowanie",
-      "teamwork": "Praca zespołowa"
-    },
-    "education": "Edukacja",
-    "uni": {
-      "title": "Studia licencjackie – Informatyka w biznesie",
-      "years": "2023 – teraz",
-      "specialization": "Specjalizacja: Front-end Developer"
-    },
-    "tech": {
-      "title": "Technikum – Informatyk",
-      "years": "2019 – 2023"
-    },
-    "experience": "Doświadczenie",
-    "job": {
-      "company": "Matseboss Solutions",
-      "role": "Front-end Developer",
-      "dates": "04.2025 – 07.2025",
-      "task1": "Projektowanie układu i UI w Figma",
-      "task2": "Tworzenie responsywnej aplikacji z Vue.js i Tailwind CSS",
-      "task3": "Wdrażanie nowych funkcji, poprawa błędów i refaktoryzacja komponentów na podstawie feedbacku lidera zespołu"
-    }
-  },
-  "contact": {
-    "title": "Kontakt",
-    "description": "Skontaktuj się ze mną przez poniższe kanały.",
-    "email": "Email",
-    "phone": "Telefon"
-  }
+
+  "home_hero_tagline": "Nie tylko koduję. Rozwiązuję problemy.",
+  "home_hero_headline": "Tworzę skalowalne aplikacje webowe, które pokochasz używać.",
+  "home_cta_projects": "Zobacz Mój Potencjał",
+  "home_cta_guarantee": "Gwarantuję, że się nie zawiedziesz. Kliknij i sprawdź sam.",
+  "home_tech_title": "Mój Kluczowy Stack Technologiczny",
+  "home_tech_frontend_title": "Frontend",
+  "home_tech_frontend_skills": "React, Vue, JavaScript, TypeScript, Tailwind CSS, animacje performatywne.",
+  "home_tech_backend_title": "Backend",
+  "home_tech_backend_skills": "Node.js (Express), REST API, MongoDB, podstawy architektury mikroserwisów.",
+  "home_tech_tools_title": "Narzędzia i Proces",
+  "home_tech_tools_skills": "Git, GitHub, GitLab, Figma, Trello (Kanban), Jira (Agile).",
+  "home_featured_title": "Projekt, który musisz zobaczyć",
+  "project_case_study": "Wyróżniony Case Study",
+  "home_view_all_projects": "Zobacz wszystkie projekty →",
+  "project1_title": "SkillShare",
+
+  "about_photo_alt": "Profesjonalne zdjęcie profilowe Damiana Argalskiego",
+  "about_hero_headline": "Cześć, jestem Damian Argalski i tworzę cyfrowe doświadczenia.",
+  "about_intro_paragraph1": "Jestem ambitnym Full-Stack Developerem (ze szczególnym zamiłowaniem do Frontendu) z jasno określonym celem: znaleźć pierwszą pracę, w której mogę wykorzystać swoje umiejętności do tworzenia wydajnych i **wizualnie precyzyjnych** aplikacji webowych. Moje główne technologie to **Vue/Tailwind CSS** oraz **Node.js/MongoDB**.",
+  "about_intro_paragraph2": "W pracy kieruje mną zasada **piksel-perfect** – przesunięcie o 1px lub minimalna różnica w odcieniu to dla mnie błąd. Jeśli coś robię, robię to na serio. Dzięki tej dbałości o detale, dostarczam interfejsy, które nie tylko działają, ale też gwarantują wyjątkowy User Experience.",
+  "about_cta_contact": "Skontaktuj się",
+  "about_cta_projects": "Moje Projekty",
+  "about_philosophy_title": "Kluczowy Atut: Precyzja i Jakość",
+  "about_philosophy_text": "Kieruję się zasadą, że każda linia kodu powinna wnosić wartość i być łatwa do utrzymania. Koncentruję się na user experience, wydajności i skalowalności. Wierzę w ciągłą naukę i adaptację do zmieniających się technologii, a także w otwartą komunikację w zespole jako klucz do sukcesu każdego projektu. **Mój unikalny atut to obsesja na punkcie jakości wizualnej i technicznej.**",
+  "about_journey_title": "Moja Krótka Podróż Deweloperska",
+  "about_journey_milestone1_title": "Początki: Zderzenie z Reactem",
+  "about_journey_milestone1_desc": "Pamiętam frustrację przy nauce pierwszego frameworka (React) – nic nie rozumiałem, ale ciekawość i chęć budowania pchały mnie dalej. Ten moment zdefiniował moją determinację do opanowania technologii.",
+  "about_journey_milestone2_title": "Wybór Stacku: Vue & Tailwind",
+  "about_journey_milestone2_desc": "Przejście na Vue.js i Tailwind CSS pozwoliło mi połączyć dbałość o design z efektywnością. To mój obecny, preferowany stack, w którym tworzę najszybciej i najczyściej.",
+  "about_journey_milestone3_title": "Cel: Pierwsza Praca",
+  "about_journey_milestone3_desc": "Obecnie skupiam się na budowaniu solidnych projektów (jak SkillShare), aby udowodnić moją wartość jako Junior Full/Front-end Developer gotowy do wniesienia realnej wartości w profesjonalnym zespole.",
+
+  "about_hobbies_title": "Co Robię, Gdy Nie Koduję?",
+  "about_hobbies_text": "Poza światem kodu, jestem pasjonatem **motocykli, samochodów i treningu na siłowni**. Te pasje, choć różne, łączy potrzeba dbałości o detale, precyzji i ciągłego doskonalenia, co przekłada się na moje podejście do programowania: dążenie do optymalnej wydajności i niezawodności.",
+  "about_final_cta_headline": "Zacznijmy tworzyć razem.",
+  "about_final_cta_text": "Jeśli szukasz osoby ambitnej, dokładnej i zdeterminowanej, która dostarcza kod o jakości 'pixel perfect', chętnie porozmawiam o potencjalnej współpracy.",
+  "about_cta_contact_large": "Nawiążmy Kontakt",
+
+  "contact_recruiter_title": "Gotów na nowy rozdział",
+  "contact_recruiter_subtitle": "Poniżej znajdziesz wszystkie niezbędne metody, aby się ze mną skontaktować. Chętnie rozważę ciekawe oferty pracy i projekty.",
+  "contact_direct_info_title": "Bezpośrednie Dane",
+  "contact_email": "Email",
+  "contact_email_desc": "Preferowany kanał komunikacji.",
+  "contact_phone": "Telefon",
+  "contact_phone_desc": "Proszę o kontakt telefoniczny w pilnych sprawach.",
+  "contact_location": "Lokalizacja",
+  "contact_location_desc": "Gotów do pracy zdalnej, w pełni elastyczny.",
+  "contact_pro_links_title": "Linki Zawodowe",
+  "contact_linkedin_desc": "Mój pełny profil zawodowy i historia pracy.",
+  "contact_github_desc": "Zobacz próbki mojego kodu i ostatnie projekty.",
+  "contact_portfolio_desc": "Zobacz najlepsze realizacje i studia przypadków.",
+  "contact_recruiter_footer": "Dziękuję za Twój czas i zaangażowanie w rekrutację.",
+
+  "projects_main_title": "Moje Projekty",
+  "projects_main_subtitle": "Poniżej znajdziesz wybrane projekty, które najlepiej prezentują moje umiejętności.",
+  "projects_featured": "Wyróżniony",
+  "projects_recruitment_task": "Zadanie Rekrutacyjne",
+  "projects_live_button": "Zobacz Demo",
+  "projects_live_button_short": "Demo",
+  "projects_code_button": "Kod Źródłowy",
+  "projects_code_button_short": "Kod",
+  "projects_call_to_action": "Więcej moich prac i eksperymentów znajdziesz na moim profilu GitHub.",
+  "project_skillshare_title": "SkillShare",
+  "project_skillshare_desc": "Na tej stronie możesz oferować swoje umiejętności lub szukać ludzi którzy posiadają poszukiwane przez Ciebie umiejętności.",
+  "project_taskhub_title": "TaskHub",
+  "project_taskhub_desc": "Zaawansowany menedżer zadań z systemem notyfikacji, tagowania i priorytetów. Projekt skupiony na wydajności i intuicyjnym UX.",
+  "project_cats_title": "Mini Galeria Kotów",
+  "project_cats_desc": "Prosta aplikacja galeryjna stworzona jako zadanie rekrutacyjne na praktyki. Implementuje pobieranie danych z zewnętrznego API."
 }
