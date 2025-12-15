@@ -52,7 +52,7 @@ const Projects = () => {
   const ProjectCard = ({ project }) => (
     <div
       className={`bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 relative ${
-        project.featured ? "border-4 border-yellow-500" : ""
+        project.featured ? "border-4 border-yellow-500 rounded-tr-none" : ""
       }`}
     >
       {project.featured && (

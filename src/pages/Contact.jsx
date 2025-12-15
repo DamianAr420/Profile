@@ -106,7 +106,7 @@ const Contact = () => {
                           />
                         ) : (
                           <span className="text-sm ml-3 text-blue-500 hover:text-blue-700">
-                            (Kopiuj)
+                            {t("contact_copy")}
                           </span>
                         )}
                       </button>
