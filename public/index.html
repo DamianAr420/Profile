@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Damian Ar - Fullstack Developer Portfolio. Twórca QuizWiz i innych aplikacji webowych."
+      content="Damian Argalski - Fullstack Developer Portfolio. Twórca QuizWiz i innych aplikacji webowych."
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
@@ -25,13 +25,12 @@
               return s.slice(0, 2) === "p=";
             })[0]
             .slice(2);
+
           if (decoded !== l.pathname) {
             window.history.replaceState(
               null,
               null,
-              l.pathname.slice(0, l.pathname.length - decoded.length) +
-                decoded +
-                l.hash,
+              "/Profile" + decoded + l.hash,
             );
           }
         }
