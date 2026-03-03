@@ -7,7 +7,7 @@ import {
   ClipboardDocumentCheckIcon,
 } from "@heroicons/react/24/outline";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
@@ -54,6 +54,11 @@ const Contact = () => {
       url: "https://github.com/DamianAr420",
       icon: faGithub,
       description: t("contact_github_desc"),
+    },
+    {
+      name: "linkedin",
+      url: "https://www.linkedin.com/in/damianar420/",
+      icon: faLinkedin,
     },
   ];
 

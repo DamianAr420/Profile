@@ -11,8 +11,21 @@ import {
 import SkillShareImage from "../img/SkillShare.png";
 import TaskHubImage from "../img/taskhub.png";
 import MiniGaleriaKotowImage from "../img/mgk.png";
+import QuizWizLogo from "../img/QuizWizLogo.png";
 
 const projectData = [
+  {
+    id: 4,
+    titleKey: "project_quiz_title",
+    descriptionKey: "project_quiz_desc",
+    image: QuizWizLogo,
+    technologies: ["Vue", "Tailwind CSS", ".NET", "PostgreSQL"],
+    githubUrlFront: "https://github.com/DamianAr420/QuizWiz-Frontend",
+    githubUrlBack: "https://github.com/DamianAr420/QuizWiz-Backend",
+    liveUrl: "https://quiz-wiz-steel.vercel.app",
+    featured: true,
+    recruitmentTask: false,
+  },
   {
     id: 1,
     titleKey: "project_skillshare_title",
@@ -51,111 +64,137 @@ const Projects = () => {
 
   const ProjectCard = ({ project }) => (
     <div
-      className={`bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 relative ${
-        project.featured ? "border-4 border-yellow-500 rounded-tr-none" : ""
+      className={`group bg-white rounded-3xl transition-all duration-500 hover:-translate-y-3 flex flex-col h-full relative ${
+        project.featured
+          ? "ring-1 ring-blue-500/50 shadow-[0_30px_60px_rgba(59,130,246,0.1)]"
+          : "shadow-[0_15px_45px_rgba(0,0,0,0.03)] hover:shadow-[0_30px_70px_rgba(0,0,0,0.06)]"
       }`}
     >
-      {project.featured && (
-        <div className="absolute top-0 right-0 bg-yellow-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg flex items-center">
-          <StarIcon className="w-4 h-4 mr-1" />
-          {t("projects_featured")}
-        </div>
-      )}
-
-      {project.recruitmentTask && (
-        <div className="absolute top-0 left-0 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-br-lg flex items-center">
-          <AcademicCapIcon className="w-4 h-4 mr-1" />
-          {t("projects_recruitment_task")}
-        </div>
-      )}
-
-      <div className="h-48 overflow-hidden bg-gray-200">
-        <img
-          src={project.image}
-          alt={t(project.titleKey)}
-          className="w-full h-full object-cover"
-        />
+      <div className="absolute top-5 right-5 z-20 flex items-center gap-2">
+        {project.featured && (
+          <div
+            className="bg-amber-500/10 text-amber-600 p-2 rounded-full backdrop-blur-sm border border-amber-200/50 shadow-sm"
+            title={t("projects_featured")}
+          >
+            <StarIcon className="w-4 h-4" />
+          </div>
+        )}
+        {project.recruitmentTask && (
+          <div
+            className="bg-indigo-500/10 text-indigo-600 p-2 rounded-full backdrop-blur-sm border border-indigo-200/50 shadow-sm"
+            title={t("projects_recruitment_task")}
+          >
+            <AcademicCapIcon className="w-4 h-4" />
+          </div>
+        )}
       </div>
 
-      <div className="p-4 sm:p-6 space-y-4">
-        <h3 className="text-xl sm:text-2xl font-bold text-gray-800">
+      <div className="p-4 pt-4 pb-0">
+        <div className="relative aspect-[16/10] overflow-hidden rounded-2xl shadow-inner bg-slate-100">
+          <img
+            src={project.image}
+            alt={t(project.titleKey)}
+            className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          />
+        </div>
+      </div>
+
+      <div className="p-6 flex flex-col flex-grow space-y-5">
+        <h3 className="text-2xl font-black text-slate-900 leading-tight group-hover:text-blue-600 transition-colors">
           {t(project.titleKey)}
         </h3>
 
-        <p className="text-sm sm:text-base text-gray-600 mb-4">
+        <p className="text-slate-600 text-sm leading-relaxed mb-auto flex-grow font-medium">
           {t(project.descriptionKey)}
         </p>
 
-        <div className="flex flex-wrap gap-2 pt-2 border-t border-gray-100">
+        <div className="flex flex-wrap gap-2 pt-5 border-t border-slate-100">
           {project.technologies.map((tech) => (
             <span
               key={tech}
-              className="px-3 py-1 text-xs font-medium text-blue-800 bg-blue-100 rounded-full"
+              className="px-3 py-1 text-[10px] font-black text-slate-500 bg-slate-100 border border-slate-200 rounded-lg uppercase tracking-wider"
             >
               {tech}
             </span>
           ))}
         </div>
 
-        <div className="pt-4 flex lg:justify-between lg:space-x-4 flex-col lg:flex-row gap-2">
+        <div className="space-y-3 pt-2">
           {project.liveUrl && (
             <a
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 inline-flex items-center justify-center px-3 py-2 sm:px-4 sm:py-2 border border-transparent text-xs sm:text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition"
+              className="w-full py-3.5 px-4 bg-slate-950 text-white rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition-all shadow-lg shadow-slate-950/20 hover:bg-gradient-to-r hover:from-blue-600 hover:to-indigo-600 active:scale-95"
             >
-              <GlobeAltIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2" />
-              <span className="hidden sm:inline">
-                {t("projects_live_button")}
-              </span>
-              <span className="sm:hidden">
-                {t("projects_live_button_short") || "Demo"}
-              </span>
+              <GlobeAltIcon className="w-5 h-5" />
+              {t("projects_live_button")}
             </a>
           )}
 
-          <a
-            href={project.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`inline-flex items-center justify-center px-3 py-2 sm:px-4 sm:py-2 border border-gray-300 text-xs sm:text-sm font-medium rounded-md shadow-sm text-gray-700 bg-white hover:bg-gray-50 transition ${
-              project.liveUrl ? "flex-1" : "w-full"
-            }`}
-          >
-            <CodeBracketSquareIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2" />
-            <span className="hidden sm:inline">
-              {t("projects_code_button")}
-            </span>
-            <span className="sm:hidden">
-              {t("projects_code_button_short") || "Kod"}
-            </span>
-          </a>
+          <div className="grid grid-cols-2 gap-3">
+            {project.githubUrlFront ? (
+              <>
+                <a
+                  href={project.githubUrlFront}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="py-3 px-3 bg-slate-50 border border-slate-200 text-slate-700 rounded-xl font-bold text-xs flex items-center justify-center gap-2 hover:bg-slate-100 hover:text-slate-900 transition-all"
+                >
+                  <CodeBracketSquareIcon className="w-4 h-4" />
+                  Frontend
+                </a>
+                <a
+                  href={project.githubUrlBack}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="py-3 px-3 bg-slate-50 border border-slate-200 text-slate-700 rounded-xl font-bold text-xs flex items-center justify-center gap-2 hover:bg-slate-100 hover:text-slate-900 transition-all"
+                >
+                  <CodeBracketSquareIcon className="w-4 h-4" />
+                  Backend
+                </a>
+              </>
+            ) : (
+              project.githubUrl && (
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="col-span-2 py-3 px-3 bg-slate-50 border border-slate-200 text-slate-700 rounded-xl font-bold text-xs flex items-center justify-center gap-2 hover:bg-slate-100 hover:text-slate-900 transition-all"
+                >
+                  <CodeBracketSquareIcon className="w-4 h-4" />
+                  {t("projects_code_button")}
+                </a>
+              )
+            )}
+          </div>
         </div>
       </div>
     </div>
   );
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-10 sm:py-16 space-y-10 sm:space-y-12">
-      <header className="text-center">
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
+    <div className="mx-auto max-w-7xl px-4 py-20 bg-slate-50/50">
+      <header className="mb-24 text-center">
+        <h1 className="text-5xl md:text-7xl font-black text-slate-950 leading-tight mb-6 tracking-tight">
           {t("projects_main_title")}
         </h1>
-        <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+        <p className="text-xl text-slate-600 max-w-2xl mx-auto font-medium leading-relaxed">
           {t("projects_main_subtitle")}
         </p>
       </header>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {projectData.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
 
-      <div className="text-center pt-8">
-        <p className="text-lg text-gray-700">{t("projects_call_to_action")}</p>
-      </div>
+      <footer className="mt-24 text-center">
+        <p className="text-slate-500 font-medium text-sm">
+          {t("projects_call_to_action")} →
+        </p>
+      </footer>
     </div>
   );
 };

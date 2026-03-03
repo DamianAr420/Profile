@@ -19,7 +19,7 @@ const DesktopNav = () => {
   };
 
   return (
-    <nav className="w-64 min-h-full bg-gray-900 text-white p-4 shadow-lg flex-shrink-0">
+    <nav className="w-52 min-h-full bg-gray-900 text-white p-4 shadow-lg flex-shrink-0">
       <h2 className="text-xl font-semibold mb-6 border-b border-gray-700 pb-2">
         {t("menu")}
       </h2>

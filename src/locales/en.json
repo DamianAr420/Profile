@@ -77,5 +77,7 @@
   "project_taskhub_title": "TaskHub",
   "project_taskhub_desc": "An advanced task manager with a notification, tagging, and priority system. The project focuses on performance and intuitive UX.",
   "project_cats_title": "Mini Cat Gallery",
-  "project_cats_desc": "A simple gallery application created as a recruitment task for an internship. It implements data fetching from an external API."
+  "project_cats_desc": "A simple gallery application created as a recruitment task for an internship. It implements data fetching from an external API.",
+  "project_quiz_title": "QuizWiz",
+  "project_quiz_desc": "A Fullstack platform for creating and solving quizzes. Features a leveling system, experience points (XP), and an admin panel for content verification. Built for scalability and performance."
 }

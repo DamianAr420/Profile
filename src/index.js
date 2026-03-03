@@ -11,5 +11,5 @@ root.render(
     <BrowserRouter basename="/Profile/">
       <App />
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

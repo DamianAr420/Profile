@@ -77,5 +77,7 @@
   "project_taskhub_title": "TaskHub",
   "project_taskhub_desc": "Zaawansowany menedżer zadań z systemem notyfikacji, tagowania i priorytetów. Projekt skupiony na wydajności i intuicyjnym UX.",
   "project_cats_title": "Mini Galeria Kotów",
-  "project_cats_desc": "Prosta aplikacja galeryjna stworzona jako zadanie rekrutacyjne na praktyki. Implementuje pobieranie danych z zewnętrznego API."
+  "project_cats_desc": "Prosta aplikacja galeryjna stworzona jako zadanie rekrutacyjne na praktyki. Implementuje pobieranie danych z zewnętrznego API.",
+  "project_quiz_title": "QuizWiz",
+  "project_quiz_desc": "Platforma Fullstack do tworzenia i rozwiązywania quizów. Posiada system poziomów, punktów doświadczenia (XP) oraz panel administracyjny do weryfikacji treści. Zbudowana z myślą o skalowalności i płynności działania."
 }
